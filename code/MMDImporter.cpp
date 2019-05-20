@@ -45,7 +45,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "MMDPmdParser.h"
 #include "MMDPmxParser.h"
 #include "MMDVmdParser.h"
-#include "ConvertToLHProcess.h"
+#include "PostProcessing/ConvertToLHProcess.h"
 #include <assimp/DefaultIOSystem.h>
 #include <assimp/Importer.hpp>
 #include <assimp/ai_assert.h>

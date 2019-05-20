@@ -54,7 +54,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #include <memory>
 
-#include "MakeVerboseFormat.h"
+#include "PostProcessing/MakeVerboseFormat.h"
 
 #include "glTFAsset.h"
 // This is included here so WriteLazyDict<T>'s definition is found.

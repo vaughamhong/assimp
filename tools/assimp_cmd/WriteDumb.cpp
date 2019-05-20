@@ -46,7 +46,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
 #include "Main.h"
-#include "../code/ProcessHelper.h"
+#include "PostProcessing/ProcessHelper.h"
 
 const char* AICMD_MSG_DUMP_HELP = 
 "assimp dump <model> [<out>] [-b] [-s] [-z] [common parameters]\n"

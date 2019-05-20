@@ -44,7 +44,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "OpenGEXImporter.h"
 #include <assimp/DefaultIOSystem.h>
 #include <assimp/DefaultLogger.hpp>
-#include "MakeVerboseFormat.h"
+#include "PostProcessing/MakeVerboseFormat.h"
 #include <assimp/StringComparison.h>
 
 #include <openddlparser/OpenDDLParser.h>

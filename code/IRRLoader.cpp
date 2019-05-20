@@ -56,7 +56,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #include <assimp/SceneCombiner.h>
 #include <assimp/StandardShapes.h>
-#include "Importer.h"
+#include "Importer/Importer.h"
 
 // We need MathFunctions.h to compute the lcm/gcd of a number
 #include <assimp/MathFunctions.h>

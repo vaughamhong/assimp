@@ -48,7 +48,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #include <stdarg.h>
 #include <assimp/version.h>
-#include "ProcessHelper.h"
+#include "PostProcessing/ProcessHelper.h"
 #include <assimp/IOStream.hpp>
 #include <assimp/IOSystem.hpp>
 #include <assimp/Exporter.hpp>

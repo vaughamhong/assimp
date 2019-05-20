@@ -43,8 +43,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "UnitTestPCH.h"
 
 #include <assimp/scene.h>
-#include <BaseProcess.h>
-
+#include "PostProcessing/BaseProcess.h"
 
 using namespace std;
 using namespace Assimp;

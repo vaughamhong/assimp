@@ -50,8 +50,8 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 // internal headers
 #include "B3DImporter.h"
-#include "TextureTransform.h"
-#include "ConvertToLHProcess.h"
+#include "PostProcessing/TextureTransform.h"
+#include "PostProcessing/ConvertToLHProcess.h"
 #include <assimp/StringUtils.h>
 #include <memory>
 #include <assimp/IOSystem.hpp>

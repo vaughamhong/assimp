@@ -56,7 +56,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <memory>
 #include <unordered_map>
 
-#include "MakeVerboseFormat.h"
+#include "PostProcessing/MakeVerboseFormat.h"
 
 #include "glTF2Asset.h"
 // This is included here so WriteLazyDict<T>'s definition is found.

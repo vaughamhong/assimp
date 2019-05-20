@@ -47,7 +47,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "3DSLoader.h"
 #include "3DSHelper.h"
 #include <assimp/SceneCombiner.h>
-#include "SplitLargeMeshes.h"
+#include "PostProcessing/SplitLargeMeshes.h"
 #include <assimp/StringComparison.h>
 #include <assimp/IOSystem.hpp>
 #include <assimp/DefaultLogger.hpp>

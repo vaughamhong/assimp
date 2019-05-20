@@ -162,10 +162,9 @@ SET( Logging_SRCS
 SOURCE_GROUP(Logging FILES ${Logging_SRCS})
 
 SET( Common_SRCS
-  BaseImporter.cpp
-  BaseProcess.cpp
-  BaseProcess.h
-  Importer.h
+  Importer/BaseImporter.cpp
+  Importer/Importer.h
+  Importer/Importer.cpp
   ScenePrivate.h
   PostStepRegistry.cpp
   ImporterRegistry.cpp
@@ -174,7 +173,6 @@ SET( Common_SRCS
   DefaultIOSystem.cpp
   CInterfaceIOWrapper.cpp
   CInterfaceIOWrapper.h
-  Importer.cpp
   IFF.h
   SGSpatialSort.cpp
   VertexTriangleAdjacency.cpp
@@ -184,8 +182,6 @@ SET( Common_SRCS
   ScenePreprocessor.cpp
   ScenePreprocessor.h
   SkeletonMeshBuilder.cpp
-  SplitByBoneCountProcess.cpp
-  SplitByBoneCountProcess.h
   StandardShapes.cpp
   TargetAnimation.cpp
   TargetAnimation.h
@@ -608,63 +604,67 @@ ADD_ASSIMP_EXPORTER( FBX
 )
 
 SET( PostProcessing_SRCS
-  CalcTangentsProcess.cpp
-  CalcTangentsProcess.h
-  ComputeUVMappingProcess.cpp
-  ComputeUVMappingProcess.h
-  ConvertToLHProcess.cpp
-  ConvertToLHProcess.h
-  EmbedTexturesProcess.cpp
-  EmbedTexturesProcess.h
-  FindDegenerates.cpp
-  FindDegenerates.h
-  FindInstancesProcess.cpp
-  FindInstancesProcess.h
-  FindInvalidDataProcess.cpp
-  FindInvalidDataProcess.h
-  FixNormalsStep.cpp
-  FixNormalsStep.h
-  DropFaceNormalsProcess.cpp
-  DropFaceNormalsProcess.h
-  GenFaceNormalsProcess.cpp
-  GenFaceNormalsProcess.h
-  GenVertexNormalsProcess.cpp
-  GenVertexNormalsProcess.h
-  PretransformVertices.cpp
-  PretransformVertices.h
-  ImproveCacheLocality.cpp
-  ImproveCacheLocality.h
-  JoinVerticesProcess.cpp
-  JoinVerticesProcess.h
-  LimitBoneWeightsProcess.cpp
-  LimitBoneWeightsProcess.h
-  RemoveRedundantMaterials.cpp
-  RemoveRedundantMaterials.h
-  RemoveVCProcess.cpp
-  RemoveVCProcess.h
-  SortByPTypeProcess.cpp
-  SortByPTypeProcess.h
-  SplitLargeMeshes.cpp
-  SplitLargeMeshes.h
-  TextureTransform.cpp
-  TextureTransform.h
-  TriangulateProcess.cpp
-  TriangulateProcess.h
-  ValidateDataStructure.cpp
-  ValidateDataStructure.h
-  OptimizeGraph.cpp
-  OptimizeGraph.h
-  OptimizeMeshes.cpp
-  OptimizeMeshes.h
-  DeboneProcess.cpp
-  DeboneProcess.h
-  ProcessHelper.h
-  ProcessHelper.cpp
-  PolyTools.h
-  MakeVerboseFormat.cpp
-  MakeVerboseFormat.h
-  ScaleProcess.cpp
-  ScaleProcess.h
+  PostProcessing/BaseProcess.cpp
+  PostProcessing/BaseProcess.h
+  PostProcessing/CalcTangentsProcess.cpp
+  PostProcessing/CalcTangentsProcess.h
+  PostProcessing/ComputeUVMappingProcess.cpp
+  PostProcessing/ComputeUVMappingProcess.h
+  PostProcessing/ConvertToLHProcess.cpp
+  PostProcessing/ConvertToLHProcess.h
+  PostProcessing/EmbedTexturesProcess.cpp
+  PostProcessing/EmbedTexturesProcess.h
+  PostProcessing/FindDegenerates.cpp
+  PostProcessing/FindDegenerates.h
+  PostProcessing/FindInstancesProcess.cpp
+  PostProcessing/FindInstancesProcess.h
+  PostProcessing/FindInvalidDataProcess.cpp
+  PostProcessing/FindInvalidDataProcess.h
+  PostProcessing/FixNormalsStep.cpp
+  PostProcessing/FixNormalsStep.h
+  PostProcessing/DropFaceNormalsProcess.cpp
+  PostProcessing/DropFaceNormalsProcess.h
+  PostProcessing/GenFaceNormalsProcess.cpp
+  PostProcessing/GenFaceNormalsProcess.h
+  PostProcessing/GenVertexNormalsProcess.cpp
+  PostProcessing/GenVertexNormalsProcess.h
+  PostProcessing/PretransformVertices.cpp
+  PostProcessing/PretransformVertices.h
+  PostProcessing/ImproveCacheLocality.cpp
+  PostProcessing/ImproveCacheLocality.h
+  PostProcessing/JoinVerticesProcess.cpp
+  PostProcessing/JoinVerticesProcess.h
+  PostProcessing/LimitBoneWeightsProcess.cpp
+  PostProcessing/LimitBoneWeightsProcess.h
+  PostProcessing/RemoveRedundantMaterials.cpp
+  PostProcessing/RemoveRedundantMaterials.h
+  PostProcessing/RemoveVCProcess.cpp
+  PostProcessing/RemoveVCProcess.h
+  PostProcessing/SortByPTypeProcess.cpp
+  PostProcessing/SortByPTypeProcess.h
+  PostProcessing/SplitLargeMeshes.cpp
+  PostProcessing/SplitLargeMeshes.h
+  PostProcessing/TextureTransform.cpp
+  PostProcessing/TextureTransform.h
+  PostProcessing/TriangulateProcess.cpp
+  PostProcessing/TriangulateProcess.h
+  PostProcessing/ValidateDataStructure.cpp
+  PostProcessing/ValidateDataStructure.h
+  PostProcessing/OptimizeGraph.cpp
+  PostProcessing/OptimizeGraph.h
+  PostProcessing/OptimizeMeshes.cpp
+  PostProcessing/OptimizeMeshes.h
+  PostProcessing/DeboneProcess.cpp
+  PostProcessing/DeboneProcess.h
+  PostProcessing/ProcessHelper.h
+  PostProcessing/ProcessHelper.cpp
+  PostProcessing/PolyTools.h
+  PostProcessing/MakeVerboseFormat.cpp
+  PostProcessing/MakeVerboseFormat.h
+  PostProcessing/ScaleProcess.cpp
+  PostProcessing/ScaleProcess.h
+  PostProcessing/SplitByBoneCountProcess.cpp
+  PostProcessing/SplitByBoneCountProcess.h
 )
 SOURCE_GROUP( PostProcessing FILES ${PostProcessing_SRCS})
 

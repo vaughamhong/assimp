@@ -50,7 +50,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #include "DXFLoader.h"
 #include <assimp/ParsingUtils.h>
-#include "ConvertToLHProcess.h"
+#include "PostProcessing/ConvertToLHProcess.h"
 #include <assimp/fast_atof.h>
 
 #include "DXFHelper.h"

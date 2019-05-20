@@ -44,7 +44,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #include <assimp/scene.h>
 #include <ScenePreprocessor.h>
-#include <SortByPTypeProcess.h>
+#include "PostProcessing/SortByPTypeProcess.h"
 
 using namespace std;
 using namespace Assimp;

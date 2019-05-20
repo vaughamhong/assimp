@@ -47,7 +47,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #ifndef ASSIMP_BUILD_NO_COB_IMPORTER
 #include "COBLoader.h"
 #include "COBScene.h"
-#include "ConvertToLHProcess.h"
+#include "PostProcessing/ConvertToLHProcess.h"
 #include <assimp/StreamReader.h>
 #include <assimp/ParsingUtils.h>
 #include <assimp/fast_atof.h>

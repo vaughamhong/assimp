@@ -48,7 +48,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <assimp/StringComparison.h>
 #include <assimp/ByteSwapper.h>
 
-#include "SplitLargeMeshes.h"
+#include "PostProcessing/SplitLargeMeshes.h"
 
 #include <assimp/SceneCombiner.h>
 #include <assimp/version.h>

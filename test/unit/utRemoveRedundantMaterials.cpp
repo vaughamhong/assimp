@@ -43,7 +43,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "UnitTestPCH.h"
 
 #include <assimp/scene.h>
-#include <RemoveRedundantMaterials.h>
+#include "PostProcessing/RemoveRedundantMaterials.h"
 #include <MaterialSystem.h>
 
 

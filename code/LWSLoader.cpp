@@ -55,8 +55,8 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <assimp/SceneCombiner.h>
 #include <assimp/GenericProperty.h>
 #include <assimp/SkeletonMeshBuilder.h>
-#include "ConvertToLHProcess.h"
-#include "Importer.h"
+#include "PostProcessing/ConvertToLHProcess.h"
+#include "Importer/Importer.h"
 #include <assimp/DefaultLogger.hpp>
 #include <assimp/scene.h>
 #include <assimp/IOSystem.hpp>

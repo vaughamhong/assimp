@@ -58,7 +58,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <assimp/GenericProperty.h>
 #include <assimp/RemoveComments.h>
 #include <assimp/ParsingUtils.h>
-#include "Importer.h"
+#include "Importer/Importer.h"
 #include <assimp/DefaultLogger.hpp>
 #include <memory>
 #include <assimp/IOSystem.hpp>

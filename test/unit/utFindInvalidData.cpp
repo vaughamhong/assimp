@@ -42,15 +42,13 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 #include "UnitTestPCH.h"
 
-#include <FindInvalidDataProcess.h>
-#include "../../include/assimp/mesh.h"
-
+#include "PostProcessing/FindInvalidDataProcess.h"
+#include <assimp/mesh.h>
 
 using namespace std;
 using namespace Assimp;
 
-class FindInvalidDataProcessTest : public ::testing::Test
-{
+class FindInvalidDataProcessTest : public ::testing::Test {
 public:
     virtual void SetUp();
     virtual void TearDown();
